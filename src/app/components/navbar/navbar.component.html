@@ -1,0 +1,13 @@
+<nav class="navbar">
+    <div class="logo">
+        Portfolio
+      </div>
+  
+    <ul class="nav-links">
+      <li><a href="#home" (click)="scrollTo('home')" [class.active]="activeSection === 'home'">Home</a></li>
+      <li><a href="#about" (click)="scrollTo('about')" [class.active]="activeSection === 'about'">About</a></li>
+      <li><a href="#skills" (click)="scrollTo('skills')" [class.active]="activeSection === 'skills'">Skills</a></li>
+      <li><a href="#experience" (click)="scrollTo('experience')" [class.active]="activeSection === 'experience'">Experience</a></li>
+      <li><a href="#contact" (click)="scrollTo('contact')" [class.active]="activeSection === 'contact'">Contact</a></li>
+    </ul>
+  </nav>

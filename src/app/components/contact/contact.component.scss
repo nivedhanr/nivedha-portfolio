@@ -1,0 +1,58 @@
+@use '../../../styles/common.scss';
+
+.social-links {
+    gap: 14px;
+    display: flex;
+    background-color: black !important;
+  
+    img {
+      width: 70px;
+      margin-right: 28px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+  
+    img:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .hero{
+    display: flow;
+    padding: 60px;
+}
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  input, textarea {
+    width: 66%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  small {
+    color: red;
+    font-size: 12px;
+  }
+  
+  button {
+    width: 69%;
+    padding: 10px;
+    background: #00aaff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:disabled {
+    background: gray;
+  }
+
+  .contact-container{
+    padding-top: 20px;
+  }

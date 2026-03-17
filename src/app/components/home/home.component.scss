@@ -1,0 +1,85 @@
+@use '../../../styles/common.scss';
+
+/* Keep content above shape */
+.hero section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Left and right columns */
+.hero>div {
+  flex: 1;
+  padding: 60px 42px;
+}
+
+.hero h3 {
+  font-size: 30px;
+  color: #777675;
+  margin: 4px;
+}
+
+.hero h1 {
+  font-size: 50px;
+  color: #ed6700;
+}
+
+.hero h2 {
+  color: #777675 !important;
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.hero p {
+  margin-top: 15px;
+  max-width: 600px;
+  color: white;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #00aaff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.social-links {
+  gap: 14px;
+  display: flex;
+
+  img {
+    width: 32px;
+    margin-right: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  img:hover {
+    transform: scale(1.2);
+  }
+}
+
+.profileContainer{
+  display: flex;
+  justify-content: center;
+  // align-items: center;
+}
+
+.profile {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;              /* makes it circle */
+  overflow: hidden;               /* cuts image to circle */
+  border: 4px solid yellowgreen;  /* border circle */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;              /* fills circle properly */
+}

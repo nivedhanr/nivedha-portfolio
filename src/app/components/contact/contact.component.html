@@ -1,0 +1,54 @@
+<div class="hero social-links" id="contact">
+  <h2>Contact Me</h2>
+  <div class="row">
+    <div class="col-md-6">
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+
+        <!-- Name -->
+        <div class="form-group">
+          <input type="text" formControlName="name" placeholder="Your Name">
+          <br><small *ngIf="contactForm.get('name')?.touched && contactForm.get('name')?.invalid">
+            Name is required
+          </small>
+        </div>
+
+        <!-- Email -->
+        <div class="form-group">
+          <input type="email" formControlName="email" placeholder="Your Email">
+          <br><small *ngIf="contactForm.get('email')?.touched && contactForm.get('email')?.invalid">
+            Enter valid email
+          </small>
+        </div>
+
+        <!-- Message -->
+        <div class="form-group">
+          <textarea rows="5" formControlName="message" placeholder="Your Message"></textarea>
+          <br><small *ngIf="contactForm.get('message')?.touched && contactForm.get('message')?.invalid">
+            Message is required
+          </small>
+        </div>
+
+        <!-- Button -->
+        <button type="submit" [disabled]="contactForm.invalid">Send</button>
+
+      </form>
+    </div>
+    <div class="col-md-6 contact-container">
+      <a href="https://www.linkedin.com/in/nivedha-nr" target="_blank">
+        <img src="shapes/linkedin.png" alt="LinkedIn">
+      </a>
+
+      <!-- <a href="https://github.com/nivedhanr?tab=repositories" target="_blank">
+    <img src="shapes/github2.png" alt="GitHub">
+  </a> -->
+
+      <a href="https://wa.me/916238290125" target="_blank">
+        <img src="shapes/whatsapp.png" alt="WhatsApp">
+      </a>
+
+      <a href="mailto:nivedharenahan@gmail.com" target="_blank">
+        <img src="shapes/gmail.png" alt="Email">
+      </a>
+    </div>
+  </div>
+</div>

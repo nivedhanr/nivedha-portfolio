@@ -1,0 +1,45 @@
+.hero {
+    display: flex;
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+}
+
+p,
+ul,
+li {
+    font-size: 22px;
+    color: #777675;
+    line-height: 1.5;
+}
+
+
+h3 {
+    font-size: 30px;
+    color: #777675;
+    margin: 4px;
+}
+
+h2 {
+    color: #777675 !important;
+    margin-top: 10px;
+    font-size: 40px;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Section spacing */
+  .hero {
+    padding: 100px 20px;
+    min-height: 100vh;
+  }
+  
+  /* Container */
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
